@@ -9,9 +9,13 @@ func main() {
 
 // A basic function that will retrieve data
 func getData(customerID int)(customer string) {
-	var firstName = "Jonas"
-	lastName := "Bird"
-	var fullName string
-	fullName = firstName + " " + lastName
-	return fullName
-}
+	// Example of control statement
+	if customerID == 1 {
+		return "Jonas Bird"
+	} else if customerID == 2 {
+		return "John Doe"
+	} else {
+		return ""
+	}
+
+	}
