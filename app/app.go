@@ -8,15 +8,12 @@ func main() {
 }
 
 // A basic function that will retrieve data
-func getData()(customers [2]string) {
+func getData()(customers []string) {
 	// Create an array of customer names
-	customer := "Jonas Bird"
+	customers = []string{"John Doe", "Jane Doe", "Robert Smith"}
 
-	// Add the entry to an array
-	customers[0] = customer
-
-	// Assign a value directly to the array
-	customers[1] = "John Doe"
+	// Add elements to the slice
+	customers = append(customers, "Jonas Bird")
 
 	// return the array to the calling function
 	return customers
