@@ -3,19 +3,22 @@ package main
 import "fmt"
 
 func main() {
-	customer := getData(1)
-	fmt.Println(customer)
+	customers := getData()
+	fmt.Println(customers)
 }
 
 // A basic function that will retrieve data
-func getData(customerID int)(customer string) {
-	// Example of control statement
-	if customerID == 1 {
-		return "Jonas Bird"
-	} else if customerID == 2 {
-		return "John Doe"
-	} else {
-		return ""
+func getData()(customers [2]string) {
+	// Create an array of customer names
+	customer := "Jonas Bird"
+
+	// Add the entry to an array
+	customers[0] = customer
+
+	// Assign a value directly to the array
+	customers[1] = "John Doe"
+
+	// return the array to the calling function
+	return customers
 	}
 
-	}
