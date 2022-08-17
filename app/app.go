@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
@@ -30,9 +29,8 @@ func getData() (customers []string) {
 	// Loop over a slice
 	// Unlike in the example code the slice being looped over has more elements
 	// then the loop will reach with the condition x < 10
-	for x := 0; x < 10; x++ {
-		fmt.Println(customers[x])
-		time.Sleep(time.Second)
+	for _, customer := range customers {
+		fmt.Println(customer)
 	}
 
 	// return the array to the calling function
