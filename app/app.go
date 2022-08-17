@@ -27,9 +27,11 @@ func getData() (customers []string) {
 	customers = append(customers, "Rozz William")
 	customers = append(customers, "Gavin Friday")
 
-	// Experiment with an infinite loop
-	for {
-		fmt.Println("Infinite loop 1")
+	// Loop over a slice
+	// Unlike in the example code the slice being looped over has more elements
+	// then the loop will reach with the condition x < 10
+	for x := 0; x < 10; x++ {
+		fmt.Println(customers[x])
 		time.Sleep(time.Second)
 	}
 
